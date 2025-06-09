@@ -64,7 +64,7 @@ function Description() {
             console.log(res)
             navigate("/bag");
         } catch (error) {
-            console.log(error)
+            console.log(error)  
             navigate("/Signin");
             setError(error.response.data);
         }
@@ -120,7 +120,7 @@ function Description() {
                                         <CarouselItem key={index} className="flex-shrink-0 w-full sm:w-[309px] md:w-full my-2">
                                             <Card className="border-0 shadow-none w-full h-full bg-transparent">
                                                 <CardContent className="flex flex-col items-center justify-center h-full">
-                                                    <img src={`http://localhost:8080/Allproduct/${img}`} alt={`product image ${index + 1}`} className="h-auto rounded-[12px]" />
+                                                    <img src={`https://apple-web-be.onrender.com/Allproduct/${img}`} alt={`product image ${index + 1}`} className="h-auto rounded-[12px]" />
                                                 </CardContent>
                                             </Card>
                                         </CarouselItem>

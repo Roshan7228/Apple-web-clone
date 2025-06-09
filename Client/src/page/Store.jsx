@@ -639,7 +639,7 @@ function Store() {
                     <Card className="border-0 shadow-md cursor-pointer px-[20px] py-[25px] w-full sm:w-[313px] md:w-[313px] h-auto rounded-[20px] bg-white transition-transform duration-300 hover:scale-101">
                       <CardContent className="flex flex-col items-center justify-between h-full">
                         <div className=" w-full h-[250px] flex items-center justify-center rounded-lg mb-5">
-                          <img src={`http://localhost:8080/Allproduct/${product.image[0]}`} alt="Case" className="w-[180px] h-auto object-contain" />
+                          <img src={`https://apple-web-be.onrender.com/Allproduct/${product.image[0]}`} alt="Case" className="w-[180px] h-auto object-contain" />
                         </div>
                         <div className="flex items-center justify-center space-x-2 mb-4">
                           {product.color && product.color.length > 0 ? (
@@ -696,7 +696,7 @@ function Store() {
                     <Card className="border-0 shadow-md cursor-pointer px-[20px] py-[25px] w-full sm:w-[313px] md:w-[313px] h-auto rounded-[20px] bg-white transition-transform duration-300 hover:scale-101">
                       <CardContent className="flex flex-col items-center justify-between h-full">
                         <div className=" w-full h-[250px] flex items-center justify-center rounded-lg mb-5">
-                          <img src={`http://localhost:8080/Allproduct/${product.image[0]}`} alt="Case" className="w-[180px] h-auto object-contain" />
+                          <img src={`https://apple-web-be.onrender.com/Allproduct/${product.image[0]}`} alt="Case" className="w-[180px] h-auto object-contain" />
                         </div>
                         <div className="flex items-center justify-center space-x-2 mb-4">
                           {product.color && product.color.length > 0 ? (

@@ -44,6 +44,12 @@ export const AuthSlice = createSlice({
                 state.User = action.payload,
                 state.isError = null
         },
+        Signinlogout:(state,action)=>{
+            state.isloading=false,
+            state.isAuth=false,
+            state.User=action.payload,
+            state.isError=null
+        },
         SigninFaild: (state, action) => {
             state.isloading = false,
                 state.isAuth = false,
@@ -73,6 +79,6 @@ export const AuthSlice = createSlice({
     }
 })
 
-export const { ResetpasswordStart, ResetpasswordSuccess, ResetpasswordFaild ,SignupStart, SignupSuccess, SignupFaild, OTPVerifyStart, OTPVerifySuccess, OTPVerifyFaild, SigninSucess, SigninStart, SigninFaild, EmverifyStart, EmverifySucces, EmverifyFaild } = AuthSlice.actions;
+export const { ResetpasswordStart,Signinlogout, ResetpasswordSuccess, ResetpasswordFaild ,SignupStart, SignupSuccess, SignupFaild, OTPVerifyStart, OTPVerifySuccess, OTPVerifyFaild, SigninSucess, SigninStart, SigninFaild, EmverifyStart, EmverifySucces, EmverifyFaild } = AuthSlice.actions;
 
 export default AuthSlice.reducer;

@@ -11,14 +11,16 @@ import { Link, useNavigate } from 'react-router';
 
 import { RxCross2 } from "react-icons/rx";
 import { HiMenuAlt4 } from "react-icons/hi";
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import axios from 'axios';
+import { Signinlogout } from '../Redux/Auth/Authreducer';
 
 function Navbar() {
     const [showDropdown, setShowDropdown] = useState(null);
     let [MobailDropdown, setMobailDropdown] = useState(false);
     let { User } = useSelector((store) => store.auth);
     let navigate=useNavigate();
+    let dispatch=useDispatch();
 
 
     async function handlelogout(){
@@ -27,6 +29,7 @@ function Navbar() {
                 withCredentials:true
             });
             console.log(res);
+            dispatch(Signinlogout(res.data.message))
             navigate("/Signin");
             
         } catch (error) {
@@ -481,7 +484,7 @@ function Navbar() {
                                     <Link to={"/bag"}><li className="flex items-center gap-2 cursor-pointer pb-[5px]"><DiCodepen className='size-[15px] color-[rgba(110,110,115,1)]' /> Order</li></Link>
                                     <li className="flex items-center gap-2 cursor-pointer pb-[5px]"><CgPentagonUp className='size-[15px] color-[rgba(110,110,115,1)]' /> Your Saves</li>
                                    <Link to={"/account"}> <li className="flex items-center gap-2 cursor-pointer pb-[5px]"><IoSettingsOutline className='size-[15px] color-[rgba(110,110,115,1)]' /> Account</li></Link>
-                                    {User?.UserName === "" ? <Link to={"signin"} onClick={() => setMobailDropdown(false)}><li className="flex items-center gap-2 cursor-pointer pb-[5px]"><VscAccount className='size-[15px] text-[rgba(110,110,115,1)]' /> Sign In</li></Link> : <li className="flex items-center gap-2 cursor-pointer pb-[5px]" onClick={handlelogout}><VscAccount className='size-[15px] text-[rgba(110,110,115,1)]' /> Sign out {User?.UserName}</li>}
+                                    {User==="Logged out successfull" ? <Link to={"signin"} onClick={() => setMobailDropdown(false)}><li className="flex items-center gap-2 cursor-pointer pb-[5px]"><VscAccount className='size-[15px] text-[rgba(110,110,115,1)]' /> Sign In</li></Link> : <li className="flex items-center gap-2 cursor-pointer pb-[5px]" onClick={handlelogout}><VscAccount className='size-[15px] text-[rgba(110,110,115,1)]' /> Sign out {User?.UserName}</li>}
                                 </ul>
                             </div>
                         </div>
@@ -558,7 +561,7 @@ function Navbar() {
                                 <Link to={"/bag"}><li className="flex items-center gap-2 cursor-pointer pb-[5px]"><DiCodepen className='size-[15px] text-[rgba(110,110,115,1)]' /> Order </li></Link>
                                 <li className="flex items-center gap-2 cursor-pointer pb-[5px]"><CgPentagonUp className='size-[15px] text-[rgba(110,110,115,1)]' /> Saves</li>
                                 <Link to={"/account"}><li className="flex items-center gap-2 cursor-pointer pb-[5px]"><IoSettingsOutline className='size-[15px] text-[rgba(110,110,115,1)]' /> Account</li></Link>
-                                {User?.UserName === "" ? <Link to={"signin"} onClick={() => setMobailDropdown(false)}><li className="flex items-center gap-2 cursor-pointer pb-[5px]"><VscAccount className='size-[15px] text-[rgba(110,110,115,1)]' /> Sign In</li></Link> : <li className="flex items-center gap-2 cursor-pointer pb-[5px]" onClick={handlelogout}><VscAccount className='size-[15px] text-[rgba(110,110,115,1)]' /> Sign out {User?.UserName}</li>}
+                                {User==="Logged out successfull" ? <Link to={"signin"} onClick={() => setMobailDropdown(false)}><li className="flex items-center gap-2 cursor-pointer pb-[5px]"><VscAccount className='size-[15px] text-[rgba(110,110,115,1)]' /> Sign In</li></Link> : <li className="flex items-center gap-2 cursor-pointer pb-[5px]" onClick={handlelogout}><VscAccount className='size-[15px] text-[rgba(110,110,115,1)]' /> Sign out {User?.UserName}</li>}
                             </ul>
                         </div>
                     </div>

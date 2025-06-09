@@ -141,7 +141,7 @@ function Bags() {
                   >
                     <div className="w-[120px] h-[120px] flex-shrink-0 rounded-lg overflow-hidden bg-white shadow">
                       <img
-                        src={`http://localhost:8080/Allproduct/${product.productimage}`}
+                        src={`https://apple-web-be.onrender.com/Allproduct/${product.productimage}`}
                         alt={product.name}
                         className="w-full h-full object-contain"
                       />
