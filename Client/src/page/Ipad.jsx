@@ -30,9 +30,7 @@ function Ipad() {
 
   async function IpadFetchApi() {
     try {
-      let res = await axios.get(`${import.meta.env.VITE_Base_URL}/product/allproduct`, {
-        withCredentials: true
-      })
+      let res = await axios.get(`${import.meta.env.VITE_Base_URL}/product/allproduct`)
 
       let Ipadmatch = res.data.Allproduct.filter((products) => {
         return products.category === "iPad"

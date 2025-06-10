@@ -38,9 +38,7 @@ function Mac() {
 
   async function MacApi() {
     try {
-      let res = await axios.get(`${import.meta.env.VITE_Base_URL}/product/allproduct`, {
-        withCredentials: true
-      });
+      let res = await axios.get(`${import.meta.env.VITE_Base_URL}/product/allproduct`);
 
       let Macfilltermatch = res.data.Allproduct.filter((products) => {
         return products.category === "Mac"
