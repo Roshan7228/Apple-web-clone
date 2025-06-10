@@ -100,7 +100,7 @@
 <h2>Prototype Screenshots 👇</h2>
 
 <h3>Shipping address</h3>
-![image](https://github.com/user-attachments/assets/a6a56f78-daf9-4d0f-b94d-3c73e8518f97)
+![image](https://github.com/user-attachments/assets/e178d2da-d332-46ae-baac-9aee405cbc69)
 
 
 <h3>Payment</h3>
