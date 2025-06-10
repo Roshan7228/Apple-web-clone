@@ -8,4 +8,29 @@
 
 ![image](https://github.com/user-attachments/assets/5f18f7d9-f11f-4efd-bd0f-eb6750b5cfdf)
 
+<h2>Features</h2>
+
+<ul>
+  <li>User Authentication: Secure email authentication with JWT.</li>
+  <li>Payment Processing: Seamless integration with Razorpay for handling payments.</li>
+  <li>Identical UI: Same look and feel as the original Apple website.</li>
+  <li>Email Notifications: Automated emails using Nodemailer and SMTP transport.</li>
+  <li>Responsive Design: Mobile-friendly design using SHadcn UI.</li>
+</ul>
+
+<h2>Technologies Used</h2>
+<table>
+  <row>
+    <col>Frontend</col>
+    <col>Backend</col>
+    <col>Other Tools</col>
+  </row>
+  <row></row>
+  <row></row>
+  <row></row>
+  <row></row>
+  <row></row>
+  <row></row>
+  <row></row>
+</table>
 
