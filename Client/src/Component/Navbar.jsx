@@ -539,7 +539,7 @@ function Navbar() {
                         <div className="px-4 pt-4">
                             <p className="text-[12px] leading-[1.33337] font-normal tracking-[-0.01em] text-[rgba(110,110,115,1)] mb-2">Quick Link</p>
                             <ul className="text-[#333336] text-[14px] font-[600]">
-                                <li className="flex items-center gap-2 pb-[5px] cursor-pointer"><FaArrowRight className='text-[12px]' /> Find a Store</li>
+                                <li className="flex items-center gap-2 pb-[5px] cursor-pointer" ><FaArrowRight className='text-[12px]' /> Find a Store</li>
                                 <li className="flex items-center gap-2 pb-[5px cursor-pointer"><FaArrowRight className='text-[12px]' /> Apple Vision Pro</li>
                                 <li className="flex items-center gap-2 pb-[5px cursor-pointer"><FaArrowRight className='text-[12px]' /> AirPods</li>
                                 <li className="flex items-center gap-2 pb-[5px cursor-pointer"><FaArrowRight className='text-[12px]' /> Apple Intelligence</li>
@@ -558,9 +558,9 @@ function Navbar() {
                         <div className="w-[18%] my-[20px]">
                             <p className="text-[12px] text-[rgba(110,110,115,1)] mb-2">My Profile</p>
                             <ul className="text-[#333336]  w-[200px] text-[12px] font-semibold space-y-[4px]">
-                                <Link to={"/bag"}><li className="flex items-center gap-2 cursor-pointer pb-[5px]"><DiCodepen className='size-[15px] text-[rgba(110,110,115,1)]' /> Order </li></Link>
-                                <li className="flex items-center gap-2 cursor-pointer pb-[5px]"><CgPentagonUp className='size-[15px] text-[rgba(110,110,115,1)]' /> Saves</li>
-                                <Link to={"/account"}><li className="flex items-center gap-2 cursor-pointer pb-[5px]"><IoSettingsOutline className='size-[15px] text-[rgba(110,110,115,1)]' /> Account</li></Link>
+                                <Link to={"/bag"}><li className="flex items-center gap-2 cursor-pointer pb-[5px]" onClick={() => setMobailDropdown(false)}><DiCodepen className='size-[15px] text-[rgba(110,110,115,1)]' /> Order </li></Link>
+                                <li className="flex items-center gap-2 cursor-pointer pb-[5px]" onClick={() => setMobailDropdown(false)}><CgPentagonUp className='size-[15px] text-[rgba(110,110,115,1)]' /> Saves</li>
+                                <Link to={"/account"}><li className="flex items-center gap-2 cursor-pointer pb-[5px]" onClick={() => setMobailDropdown(false)}><IoSettingsOutline className='size-[15px] text-[rgba(110,110,115,1)]' /> Account</li></Link>
                                 {User==="Logged out successfull" ? <Link to={"signin"} onClick={() => setMobailDropdown(false)}><li className="flex items-center gap-2 cursor-pointer pb-[5px]"><VscAccount className='size-[15px] text-[rgba(110,110,115,1)]' /> Sign In</li></Link> : <li className="flex items-center gap-2 cursor-pointer pb-[5px]" onClick={handlelogout}><VscAccount className='size-[15px] text-[rgba(110,110,115,1)]' /> Sign out {User?.UserName}</li>}
                             </ul>
                         </div>

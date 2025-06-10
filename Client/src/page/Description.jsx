@@ -64,7 +64,7 @@ function Description() {
             console.log(res)
             navigate("/bag");
         } catch (error) {
-            console.log(error)  
+            console.log(error)
             navigate("/Signin");
             setError(error.response.data);
         }
@@ -112,27 +112,36 @@ function Description() {
             <div className="w-full">
                 <div className="w-[95%] max-w-[1440px] m-auto flex flex-col lg:flex-row mb-[40px]">
                     {/* Image Carousel */}
-                    <div className="w-full lg:w-[70%] mx-auto">
-                        <div className="w-full h-[200px] md:h-[500px] relative">
-                            <Carousel opts={{ align: "start", loop: false }} className="w-[85.40%] m-auto">
+                    <div className="w-full lg:w-[60%] mx-auto">
+                        <div className="relative w-full px-4">
+                            <Carousel opts={{ align: "start", loop: false }} className="w-full">
                                 <CarouselContent>
                                     {productdescription?.image?.map((img, index) => (
-                                        <CarouselItem key={index} className="flex-shrink-0 w-full sm:w-[309px] md:w-full my-2">
-                                            <Card className="border-0 shadow-none w-full h-full bg-transparent">
-                                                <CardContent className="flex flex-col items-center justify-center h-full">
-                                                    <img src={`https://apple-web-be.onrender.com/Allproduct/${img}`} alt={`product image ${index + 1}`} className="h-auto rounded-[12px]" />
+                                        <CarouselItem
+                                            key={index}
+                                            className="w-full"
+                                        >
+                                            <Card className="border-0 shadow-none bg-transparent w-full">
+                                                <CardContent className="w-full flex items-center justify-center">
+                                                    <div className="w-full aspect-[4/3] sm:aspect-[16/9] md:aspect-[21/9] lg:aspect-[21/9]">
+                                                        <img
+                                                            src={`https://apple-web-be.onrender.com/Allproduct/${img}`}
+                                                            alt={`product image ${index + 1}`}
+                                                            className="w-full h-full object-contain rounded-[12px]"
+                                                        />
+                                                    </div>
                                                 </CardContent>
                                             </Card>
                                         </CarouselItem>
                                     ))}
                                 </CarouselContent>
-                                <CarouselPrevious className="absolute top-1/2 -translate-y-1/2 z-10" />
-                                <CarouselNext className="absolute top-1/2 -translate-y-1/2 left-[102%] z-10" />
+
+                                {/* Navigation Buttons */}
+                                <CarouselPrevious className="absolute top-1/2 -left-[20%] -translate-y-1/2 z-10 bg-white/80 rounded-full shadow hover:bg-white transition" />
+                                <CarouselNext className="absolute top-1/2 right-1 -translate-y-1/2 z-10 bg-white/80 rounded-full shadow hover:bg-white transition" />
                             </Carousel>
                         </div>
                     </div>
-
-                    {/* Product Info */}
                     <div className="w-full lg:w-[30%] bg-white md:py-10 md:px-4 py-2 px-2 space-y-6">
                         <h1 className="text-[#1D1D1F] text-[24px] font-bold">Model.<span className="text-[#86868b] font-normal"> Which is best for you?</span></h1>
 

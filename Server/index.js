@@ -26,6 +26,9 @@ app.use("/api/product",Productroute);
 app.use("/api/comment",Commentroute);
 app.use("/api/order",OrderRoutes);
 
+app.get("/", (req, res) => {
+    res.send("<h1>API is Working......</h1>");
+});
 
 app.listen(process.env.PORT,async()=>{
     try {

@@ -280,7 +280,7 @@ function Mac() {
                     <div className="slider w-full sm:w-[309px] md:w-[372px] mx-auto">
                       <Card className="shadow-none border-0 cursor-pointer w-full sm:w-[309px] md:w-[372px] h-auto mx-auto transform transition-transform duration-300 hover:scale-101 bg-white rounded-lg">
                         <CardContent className="flex flex-col items-center justify-center px-6 py-6 text-center">
-                          <img src={`http://localhost:8080/Allproduct/${product.image[0]}`} alt={product.name} className="w-full object-contain mb-6" />
+                          <img src={`https://apple-web-be.onrender.com/Allproduct/${product.image[0]}`} alt={product.name} className="w-full object-contain mb-6" />
                           <div className="flex items-center justify-center space-x-2 mb-4">
                             {product.color && product.color.length > 0 ? (
                               product.color[0].split(',').map((colr, index) => (
