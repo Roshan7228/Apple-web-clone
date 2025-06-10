@@ -19,9 +19,7 @@ function Description() {
 
     async function description() {
         try {
-            let res = await axios.get(`${import.meta.env.VITE_Base_URL}/product/description/${User._id}/${pid}`, {
-                withCredentials: true
-            })
+            let res = await axios.get(`${import.meta.env.VITE_Base_URL}/product/description/${pid}`)
             setproductdescription(res.data.singleproduct);
         } catch (error) {
             console.log(error);
