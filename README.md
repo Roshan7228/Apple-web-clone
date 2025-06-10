@@ -19,18 +19,38 @@
 </ul>
 
 <h2>Technologies Used</h2>
-<table>
-  <row>
-    <col>Frontend</col>
-    <col>Backend</col>
-    <col>Other Tools</col>
-  </row>
-  <row></row>
-  <row></row>
-  <row></row>
-  <row></row>
-  <row></row>
-  <row></row>
-  <row></row>
+
+<table border="1">
+  <tr>
+    <th>Frontend</th>
+    <th>Backend</th>
+    <th>Other Tools</th>
+  </tr>
+  <tr>
+    <td>React.js</td>
+    <td>Node.js</td>
+    <td>Nodemailer</td>
+  </tr>
+  <tr>
+    <td>Chakra UI</td>
+    <td>Express.js</td>
+    <td>JWT</td>
+  </tr>
+  <tr>
+    <td>Axios</td>
+    <td>MongoDB</td>
+    <td>Redux</td>
+  </tr>
+  <tr>
+    <td>React Router</td>
+    <td>Mongoose</td>
+    <td>REST API</td>
+  </tr>
+  <tr>
+    <td>HTML/CSS</td>
+    <td>--</td>
+    <td>SMTP</td>
+  </tr>
 </table>
+
 
