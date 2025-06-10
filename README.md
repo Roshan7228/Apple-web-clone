@@ -65,4 +65,13 @@
   </tr>
 </table>
 
+<h1>Functionality</h1>
+<h2>Homepage</h2>
+<h2>Prototype Screenshots 👇 </h2>
+
+![image](https://github.com/user-attachments/assets/ffaa4751-b4fe-44d8-81d7-a141c043afbb)
+<p>The homepage displays featured products and promotional banners, providing users with a quick overview of the latest Apple products.</p>
+
+<h2>Product Listing</h2>
+
 
