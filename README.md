@@ -15,7 +15,8 @@
   <li>Payment Processing: Seamless integration with Razorpay for handling payments.</li>
   <li>Identical UI: Same look and feel as the original Apple website.</li>
   <li>Email Notifications: Automated emails using Nodemailer and SMTP transport.</li>
-  <li>Responsive Design: Mobile-friendly design using SHadcn UI.</li>
+  <li>Responsive Design: Mobile-friendly design using Shadcn UI.</li>
+  <li>Comment System: Users can post and view comments on product pages.</li>
 </ul>
 
 <h2>Technologies Used</h2>
@@ -32,24 +33,27 @@
     <td>Nodemailer</td>
   </tr>
   <tr>
-    <td>Chakra UI</td>
+    <td>Shadcn UI</td>
     <td>Express.js</td>
-    <td>JWT</td>
+    <td>Razorpay</td>
   </tr>
   <tr>
     <td>Axios</td>
     <td>MongoDB</td>
-    <td>Redux</td>
+    <td>Render</td>
   </tr>
   <tr>
-    <td>React Router</td>
-    <td>Mongoose</td>
-    <td>REST API</td>
+    <td>Tailwind</td>
+    <td>CORS</td>
+    <td>EJS</td>
   </tr>
   <tr>
-    <td>HTML/CSS</td>
-    <td>--</td>
-    <td>SMTP</td>
+    <td>JWT</td>
+    <td>Multer</td>
+  </tr>
+  <tr>
+    <td>bcrypt</td>
+    <td>Nodemailer SMTP Transport</td>
   </tr>
 </table>
 
