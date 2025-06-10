@@ -1,2 +1,4 @@
 # Apple-web-clone
-Front-End (React) and Back-End(Node.js)
+<a href="https://effulgent-taffy-a669e3.netlify.app/">Apple Offical Website Clone</a>
+Kindly open it using Google Chrome only, as it may not function properly on other browsers.
+
