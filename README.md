@@ -56,6 +56,7 @@
     <td></td>
     <td>bcrypt</td>
     <td>Nodemailer SMTP Transport</td>
+    <td>Netlify</td>
   </tr>
 </table>
 
