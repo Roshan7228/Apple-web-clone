@@ -74,4 +74,37 @@
 
 <h2>Product Listing</h2>
 
+![image](https://github.com/user-attachments/assets/9b8f4537-2c21-4573-8327-9224df738ca7)
+
+<h2>Product Details</h2>
+<h3>Prototype Screenshots 👇</h3>
+
+![image](https://github.com/user-attachments/assets/9b812aad-741f-4afb-a8a7-464b718cc5b4)
+<p>Detailed product information, including specifications, price, and user reviews.</p>
+
+<h1>User Authentication</h1>
+<ul>
+  <li>Signup</li>
+</ul>
+![image](https://github.com/user-attachments/assets/accd9af1-e416-4a51-92f8-88b4a281f538)
+
+<ul>
+  <li>login</li>
+</ul>
+![image](https://github.com/user-attachments/assets/3ea7e2a6-1c63-4c35-89de-e8a476534ac6)
+
+<p>Secure login and registration system with JWT-based authentication.</p>
+
+<h1>Payment Processing</h1>
+
+<h2>Prototype Screenshots 👇</h2>
+
+<h3>Shipping address</h3>
+![image](https://github.com/user-attachments/assets/a6a56f78-daf9-4d0f-b94d-3c73e8518f97)
+
+
+<h3>Payment</h3>
+![image](https://github.com/user-attachments/assets/98f7a014-c676-42a1-b6bb-746e9aca34d2)
+
+
 
