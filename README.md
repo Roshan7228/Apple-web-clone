@@ -48,6 +48,7 @@
     <td>EJS</td>
   </tr>
   <tr>
+    <td></td>
     <td>JWT</td>
     <td>Multer</td>
   </tr>
