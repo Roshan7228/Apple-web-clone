@@ -76,7 +76,7 @@ const UserController = {
             let MailHTMLTemplte = await ejs.renderFile(__dirname + "/../views/Email.ejs", { OTP: UserResult.OTP });
             await SendMail(MailHTMLTemplte, Email, "OTP Verification !");
 
-            return response.cookie("Verification_Token", UserResult.token).status(200).json({
+            return response.cookie("Verification_Token", UserResult.token,{httpOnly:true,secure:true,sameSite:"None"}).status(200).json({
                 message: "OTP sent on your email."
             });
         } catch (error) {
@@ -193,9 +193,9 @@ const UserController = {
                 })
             }
             let { token, OTP } = await createOTPandTOken(isExist, process.env.PrivateKEY, "5m");
-            let MainHTMLTemplate = await ejs.renderFile(__dirname + "/../views/EMail.ejs", { OTP: OTP });
+            let MainHTMLTemplate = await ejs.renderFile(__dirname + "/../views/Email.ejs", { OTP: OTP });
             await SendMail(MainHTMLTemplate, request.body.Email, "OTP Verification");
-            return response.cookie("Verification_Token", token).status(200).json({
+            return response.cookie("Verification_Token", token,{httpOnly:true,secure:true,sameSite:"None"}).status(200).json({
                 message: "OTP Send Your Email"
             })
 
